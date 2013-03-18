@@ -13,7 +13,6 @@ module GoogleSearchSteps
     click_button 'gbqfb'
   end
 
-
   step ':link_name のリンクをクリック' do |link_name|
     click_link link_name
   end
