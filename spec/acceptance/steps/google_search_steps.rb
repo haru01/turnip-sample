@@ -8,7 +8,6 @@ module GoogleSearchSteps
   end
 
   step ":keys で検索" do |keys|
-    puts keys
     fill_in "gbqfq", with: keys
     click_button 'gbqfb'
   end
