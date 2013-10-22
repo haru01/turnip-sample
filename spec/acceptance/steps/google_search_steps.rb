@@ -8,8 +8,10 @@ module GoogleSearchSteps
   end
 
   step ":keys で検索" do |keys|
-    fill_in "gbqfq", with: keys
-    click_button 'gbqfb'
+    within 'body' do
+      fill_in('q', with: keys)
+      click_button 'Google 検索'
+    end
   end
 
   step ':link_name のリンクをクリック' do |link_name|
